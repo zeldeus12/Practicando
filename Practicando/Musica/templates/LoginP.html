@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{%load static%}
+		<html>
+		<head>
+
+		    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+			<!-- vinculo a bootstrap -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<!-- Temas-->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+			<!-- se vincula al hoja de estilo para definir el aspecto del formulario de login-->
+			<link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css'%}">
+			<title>MusLyrics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'css/main.css'%}">
+		</head>
+		<header id="header">
+				<h1><a href="/Inicio">MusLyrics <span>VeGa</span></a></h1>
+				<a href="#menu">Menu UwU</a>
+			</header>
+		<body>
+
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/Inicio">Inicio</a></li>
+					<li><a href="/Secundario">¿Quienes somos?</a></li>
+					<li><a href="/Formulario">Formulario</a></li>
+					<li><a href="/elements.html">Elements</a></li>
+
+				</ul>
+			</nav>
+{%block content%}
+
+{%endblock%}
+</body>
+
+</html>
+{%block js%}
+			<script src="{%static 'js/jquery.min.js'%}"></script>
+			<script src="{%static 'js/jquery.scrolly.min.js'%}"></script>
+			<script src="{%static 'js/skel.min.js'%}"></script>
+			<script src="{%static 'js/util.js'%}"></script>
+			<script src="{%static 'js/main.js'%}"></script>
+ <!-- vinculando a libreria Jquery-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <!-- Libreria java scritp de bootstrap -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+{%endblock js%}
