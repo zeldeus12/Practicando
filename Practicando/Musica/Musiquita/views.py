@@ -45,5 +45,14 @@ def linkeimagen(request):
     templates = 'Musiquita/LinkeImagen.html'
 
     return render(request,templates)
+def welcome(request):
+    return render(request, "users/welcome.html")
+
+def register(request):
+    return render(request, "users/register.html")
+
+def logout(request):
+    # Redireccionamos a la portada
+    return redirect('/')
 # Create your views here.
 
