@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import primera,segunda,login, formulario,admin,agregarcanciones,agregarartistas,linkeimagen
+from .views import primera,segunda,login, formulario,admin,agregarcanciones,agregarartistas,linkeimagen,lista
 urlpatterns = [
 path ('Inicio/', primera , name='homes'),
 path ('Secundario/', segunda, name='dosh'),
@@ -10,5 +10,6 @@ path ('Admin/', admin, name='Admin'),
 path ('AgregarCanciones/', agregarcanciones, name='Agregacanciones'),
 path ('AgregarArtistas/', agregarartistas, name='Agregaartistas'),
 path ('LinkeImagen/', linkeimagen, name='Admin'),
+path ('Link/', lista, name='lista'),
 
 ]

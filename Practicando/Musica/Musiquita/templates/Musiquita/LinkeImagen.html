@@ -1,5 +1,19 @@
 {%extends 'Administrador.html'%}
 
 {%block content%}
+<form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
 
+    <p>Ingresa el link: <input type="text" name="Link"></p>
+    <p>Que artista le corresponde la cancion: <input type="text" name="Nombreartista"></p>
+  <p>
+
+    Sube una foto del album:
+
+    <input type="file" name="archivosubido">
+
+    <input type="submit" value="Enviar datos">
+
+  </p>
+
+</form>
 {%endblock%}
